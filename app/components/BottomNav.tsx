@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Home, Store, PlusCircle, BriefcaseBusiness, User2 } from "lucide-react";
+import { Home, Store, PlusCircle, Truck, User2 } from "lucide-react";
 
 const items = [
   { href: "#/", label: "Home", Icon: Home },
   { href: "#/market", label: "Market", Icon: Store },
   { href: "#/sell", label: "Sell", Icon: PlusCircle },
-  { href: "#/jobs", label: "Jobs", Icon: BriefcaseBusiness },
+  { href: "#/jobs", label: "Jobs", Icon: Truck },
   { href: "#/profile", label: "Profile", Icon: User2 },
 ];
 
