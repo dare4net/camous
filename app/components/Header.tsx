@@ -1,11 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { ShoppingBag, Wallet } from "lucide-react";
 
 export default function Header() {
-  const pathname = usePathname();
   return (
     <header className="header-bar">
       <div className="container header-inner">

@@ -5,7 +5,7 @@ export default function PwaRegister() {
   useEffect(() => {
     if (typeof window !== "undefined" && "serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js")
-        .then((registration) => {
+        .then(() => {
           console.log('PWA: Service worker registered successfully');
         })
         .catch((error) => {

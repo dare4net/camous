@@ -1,8 +1,13 @@
 import Header from "../../components/Header";
 import BottomNav from "../../components/BottomNav";
+import { Metadata } from 'next';
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
-  const id = params.id;
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function ProductDetail() {
   return (
     <div>
       <Header />
