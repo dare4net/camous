@@ -1,0 +1,29 @@
+{
+  "name": "Camous - Campus Marketplace",
+  "short_name": "Camous",
+  "description": "Buy and sell with your campus community. Find great deals from fellow students.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#2196f3",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["shopping", "marketplace", "education"],
+  "icons": [
+    {
+      "src": "/Camous-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Camous-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
+
+
