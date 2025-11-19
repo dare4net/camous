@@ -1,8 +1,12 @@
 import Header from "../../components/Header";
 import BottomNav from "../../components/BottomNav";
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
-  const id = params.id;
+type ProductDetailPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function ProductDetail({ params }: ProductDetailPageProps) {
+  const { id } = await params;
   return (
     <div>
       <Header />
