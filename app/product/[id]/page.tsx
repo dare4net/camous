@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import BottomNav from "../../components/BottomNav";
+<<<<<<< HEAD
 import { Metadata } from 'next';
 
 type Props = {
@@ -8,6 +9,15 @@ type Props = {
 }
 
 export default function ProductDetail() {
+=======
+
+type ProductDetailPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function ProductDetail({ params }: ProductDetailPageProps) {
+  const { id } = await params;
+>>>>>>> master
   return (
     <div>
       <Header />
