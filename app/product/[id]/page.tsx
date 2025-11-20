@@ -1,15 +1,5 @@
 import Header from "../../components/Header";
 import BottomNav from "../../components/BottomNav";
-<<<<<<< HEAD
-import { Metadata } from 'next';
-
-type Props = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
-
-export default function ProductDetail() {
-=======
 
 type ProductDetailPageProps = {
   params: Promise<{ id: string }>;
@@ -17,7 +7,6 @@ type ProductDetailPageProps = {
 
 export default async function ProductDetail({ params }: ProductDetailPageProps) {
   const { id } = await params;
->>>>>>> master
   return (
     <div>
       <Header />
@@ -25,7 +14,7 @@ export default async function ProductDetail({ params }: ProductDetailPageProps) 
         <div className="card" style={{ padding: 12 }}>
           <div style={{ position: "relative", width: "100%", paddingTop: "66%", background: "#e5e7eb", borderRadius: 12 }} />
           <div style={{ padding: 12 }}>
-            <h1 style={{ margin: "8px 0", fontSize: 28 }}>Vintage Cruiser Bicycle</h1>
+            <h1 style={{ margin: "8px 0", fontSize: 28 }}>Vintage Cruiser Bicycle #{id}</h1>
             <div style={{ color: "#ff9800", fontWeight: 800, fontSize: 24 }}>$120.00</div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 12 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
